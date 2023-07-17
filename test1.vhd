@@ -42,10 +42,9 @@ procedure set(
 signal saya : in integer;
 signal segmenttt :inout  std_logic_vector(7 downto 0)
  )is
---variable segmenttt : std_logic_vector(7 downto 0);
---variable sayac : integer :=0;
+
  begin
--- segmentt<=segmenttt;
+
   case saya is
   when 0=>
   segmenttt <= x"40";
@@ -99,10 +98,7 @@ end process;
 
 
  main : process(clk)
--- variable sayac : integer :=0;
---  variable onlar : integer :=0;
--- variable yuzler : integer :=0;
--- variable binler : integer :=0;
+
  variable saniye : integer :=0;
 variable i: integer range 0 to 2:=0 ;
  begin
@@ -233,7 +229,7 @@ counter2 <= (others => '0');
   end process;
  
 
---segment <=x"F8" ;
+
 segment <= segmentt;
 anot <=anott;
 led1<= led11;

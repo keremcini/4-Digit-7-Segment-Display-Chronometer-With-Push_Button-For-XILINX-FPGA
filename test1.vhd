@@ -36,7 +36,7 @@ signal segmentt : std_logic_vector(7 downto 0);
    signal led33 :std_logic;
 signal timer1ms					: integer range 0 to c_timer1mslim ;
 
-signal anott: std_logic_vector(3 downto 0) :="1110";
+signal anott: std_logic_vector(3 downto 0) :="0001";
 
 procedure set(
 signal saya : in integer;
